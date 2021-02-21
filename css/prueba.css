@@ -3,9 +3,8 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #ffcc5c;
-  font-family: 'Fjalla One', sans-serif;
-  font-family: 'Rubik', sans-serif;
+  background-color: #F28076;
+  font-family: 'Courier New', Courier, monospace;
   position: relative;
   min-height: 100vh; }
 
@@ -16,7 +15,7 @@ body {
   padding: 0px;
   text-align: center;
   font-size: 32px;
-  background-color: white; }
+  background-color: #FFB6AF; }
 
 .inline {
   display: inline; }
@@ -26,48 +25,54 @@ body {
   transform: scale(5, 5); }
 
 h1 {
-  background-color: white;
+  background-color: #FFB6AF;
   text-align: center;
   font-size: 25px;
-  color: #588c7e; }
+  color: whitesmoke; }
 
 /*LINKS*/
+/* unvisited link */
 a:link {
-  color: #d96459;
+  color: whitesmoke;
   text-decoration: none; }
-  a:link:visited {
-    color: #d96459;
-    text-decoration: none; }
-  a:link:hover {
-    color: white;
-    text-decoration: none; }
-  a:link:active {
-    color: white;
-    text-decoration: none; }
 
-footer {
-  text-align: center;
-  color: black; }
+/* visited link */
+a:visited {
+  color: whitesmoke;
+  text-decoration: none; }
+
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+/* selected link */
+a:active {
+  color: white;
+  text-decoration: none; }
 
 /*INDEX: logo y botón*/
 .logo {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; }
-  .logo .button_order {
-    position: absolute;
-    margin-left: -318px;
-    margin-top: 80px;
-    padding: 20px;
-    background-color: #5b9aa0;
-    color: white;
-    font-size: 20px;
-    border-radius: 12px;
-    cursor: pointer; }
-  .logo > form > .button_order:hover {
-    background-color: #d96459;
-    transform: scale(1.5, 1.5); }
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.button_order {
+  position: absolute;
+  margin-left: -318px;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #4EB09B;
+  color: white;
+  font-size: 20px;
+  border-radius: 12px;
+  cursor: pointer; }
+
+> form > .button_order:hover {
+  background-color: #d96459;
+  transform: scale(1.5, 1.5); }
 
 /* ABOUT */
 .grid_container {
@@ -120,7 +125,7 @@ footer {
     font-size: 24px; }
 
 button {
-  background-color: #5b9aa0;
+  background-color: #4EB09B;
   color: white;
   padding: 15px;
   border-radius: 12px;
