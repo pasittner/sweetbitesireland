@@ -1,0 +1,269 @@
+$background-color: #FAD8D8; 
+$dark-pink: #FF6F9A; 
+$dark-lightblue: #4AA1B5;
+
+* {
+    box-sizing: border-box; 
+    }
+    
+    body {
+      background-image: url("../images/background.jpg");
+      background-position: center;
+      background-repeat: repeat-x;
+      background-color: $background-color; 
+      font-family: 'Arima Madurai';
+      position: relative;
+      min-height: 100vh; 
+      margin:0px; 
+    }
+    
+    /*Barra de navegación*/
+    .navbar {
+      word-spacing: 45px; 
+      margin: 0px;
+      padding: 8px;
+      text-align: center;
+      font-size: 32px; 
+      color: white; 
+      background-color: $dark-pink; 
+     }
+    
+    .navbar >a:hover {
+      color: #A0CED9;
+      transform: scale(5,5);
+    }
+    
+    /*Título de todas las secciones*/
+    h1 {
+      background-color: white;
+      text-align: center;  
+      font-size: 2rem;
+      color: $dark-lightblue; 
+    }
+    
+    h2 {
+      background-color: RGBA(255,255,255,0.85);
+      text-align: left;  
+      font-size: 1.5rem;
+      color:$dark-pink;       
+      padding: 20px; 
+      margin-bottom: 5px; 
+    }
+    
+         /*LINKS*/
+    /* unvisited link */
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
+    /* visited link */
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+    /* mouse over link */
+    a:hover {
+      color: white;
+      text-decoration: none;
+    }
+    /* selected link */
+    a:active {
+      color: white;
+      text-decoration: none;
+    }
+    
+    /*INDEX: logo y botón*/
+    
+    .container-index {
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .flex-item-left {
+      margin-top: 90px;
+      flex:50%;
+    }
+    
+    .logo {
+      max-width: 100%;
+    }
+    
+    .flex-item-center {
+    margin-top: 400px;
+    margin-bottom: 30px;
+    }
+    
+    .button-order {
+      font-size: 3rem;
+      background-color: $dark-pink;       
+      color: whitesmoke;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;  
+      padding: 8px;
+    }
+    
+    .button-order:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    
+    .flex-item-right {
+     margin-top: 180px;
+     flex: 50%;
+     font-size: 5.5rem;
+     color:whitesmoke;
+     font-family: 'Arima Madurai', cursive;
+    }
+    
+    p {
+    margin: 0px;
+    }
+    
+    
+    /* ABOUT */
+    
+    .row {  
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .our-history { 
+      background-color: RGBA(255,255,255,0.90);
+      width: 100%;
+      padding: 20px;
+      align-items: center;
+    }
+    
+    .main {
+      /* background-color: RGBA(255,255,255,0.85);  */
+      font-size: 1rem;
+      color:rgba(0,0,0,0.85);
+      font-weight:900; 
+      text-align: justify;
+      flex: 70%;
+      padding: 20px;
+    }
+    
+    .side {
+      flex: 30%;
+      padding: 20px;
+    }
+    
+    /*SWEET & SAVOURY*/
+    .flex_container {
+      display: flex;
+      flex-direction: row; 
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      font-size: 25px; 
+    }
+    
+    .flex_container > div {
+      background-color: white;
+      border: solid 5px white;
+      border-radius: 10px;
+      margin: 1px;
+      margin-bottom: 10px;  
+    }
+    
+    img {
+    border-radius: 10px;
+    padding: 2px;
+    }
+    
+    .flex_container > div:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    
+    /* CONTACT */
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: $dark-pink;      
+      color: whitesmoke;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      padding: 10px;
+    }
+    
+    .column {
+      float: left;
+      width: 50%;
+      margin-top: 6px;
+      padding: 20px;
+    }
+    
+    .row:after {
+      display: table;
+      clear: both;
+    }
+     
+    /*FOOTER*/
+    
+    footer {
+     position: absolute;
+     background-color: $dark-pink;      
+     bottom: 0; 
+     width: 100%;
+     height: 1px;
+      
+    }
+    
+    .ffooter {
+      background-color: $dark-pink;       
+      font-size: 20px;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    
+    }
+    
+    .fa {
+      width: 20px;
+      text-decoration: none;
+    }
+    
+    /*RESPONSIVE*/
+    
+    @media screen and (max-width:1024px) {
+     .flex-container-index, .flex-container, .container, .row, .navbar {   
+        flex-direction: column;
+      }
+      body {   
+        background-repeat: repeat-y;
+      }
+      .flex-item-right {
+        display: none;
+      }
+      .flex-item-center {
+        margin-top: 50px;
+      }
+    
+      .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    
+    
